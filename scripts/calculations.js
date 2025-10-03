@@ -17,7 +17,7 @@ let expenseEntries = [
 //Obtener el total de la compra
 for (let i = 0; i < expenseEntries.length; i++) {
 	totalExpensesValue += Number(expenseEntries[i][1]);
-	console.log(expenseEntries[i][1]);
+	//console.log(expenseEntries[i][1]);
 }
 
 //funciones
@@ -49,7 +49,7 @@ function calculateCategoryExpenses(category, expenseEntries) {
 	for (let i = 0; i < expenseEntries.length; i++) {
 		if (expenseEntries[i][0] === category) {
 			categoryTotal += Number(expenseEntries[i][1]);
-			console.log(expenseEntries[i][1]);
+			//console.log(expenseEntries[i][1]);
 		}
 	}
 	return categoryTotal;
@@ -89,9 +89,7 @@ function addExpenseEntry(entryArray) {
 		typeof entryArray[0] !== "string" ||
 		isNaN(entryArray[1])
 	) {
-		console.log(
-			"Entrada inválida. Debe ser un array con [categoría, número]"
-		);
+		//console.log("Entrada inválida. Debe ser un array con [categoría, número]");
 		return;
 	}
 

@@ -103,7 +103,7 @@ function addExpenseEntry(entryArray) {
 	// Actualizamos el total de gastos
 	totalExpensesValue += amount;
 
-	console.log(`Se agregó: ${category} - $${amount}`);
+	//console.log(`Se agregó: ${category} - $${amount}`);
 }
 /*
 //Comprobación de las funcionalidades del programa
